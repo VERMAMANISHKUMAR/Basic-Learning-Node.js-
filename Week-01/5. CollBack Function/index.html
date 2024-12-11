@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>CollBack Function</title>
+</head>
+<body>
+          <div #="root"></div>
+     <script>
+          function callback(){
+                    console.log("this is my collback function")
+          }
+          const add =function(a,b,callback){
+                    var result=a+b;
+                    console.log("result "+result)
+                    callback()
+          }
+          add(1,3,callback)
+     </script>
+</body>
+</html>
